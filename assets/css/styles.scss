@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+
+@import "hash-animation";
+@import "application-card";
+@import "btn";
+@import "grid";
+@import "link-arrow";
+@import "linked-headers";
+@import "loader";
+@import "markdown";
+@import "nav";
+@import "page";
+@import "spacers";
+@import "typography";
+@import "verifiable-data-structures";
+
+.blue-print-borders {
+  position: relative;
+  overflow: hidden;
+  @screen md {
+    &:before {
+      position: absolute;
+      top:0;
+      left: -220px;
+      content: url('../images/blueprint-hashes.svg');
+      mix-blend-mode: lighten;
+    }
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    content: url('../images/blueprint-hashes.svg');
+    mix-blend-mode: lighten;
+  }
+}
+
+.reference-card-list-item {
+  .logo-icon {
+    @apply -ml-1 inline-block align-top;
+    height: 1rem;
+    margin-top: 6px;
+  }
+  @apply border-t border-Grey-300;
+  &:last-child {
+    @apply border-b;
+  }
+}
+
+.reference-link:hover {
+  h3 {
+    @apply text-Blue-600;
+  }
+}
+
+@tailwind utilities;

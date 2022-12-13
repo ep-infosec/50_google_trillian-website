@@ -1,0 +1,14 @@
+{
+  "example_projects": [
+    {
+      "title": "Hello Trillian",
+      "description": "This is a basic example of how to use Trillian to implement the operations needed for a verifiable log.",
+      "url": "https://github.com/google/trillian-examples/tree/master/helloworld"
+    },
+    {
+      "title": "Log requests to post public messages",
+      "description": "Employees at your company can post to a public messaging platform ‘Tritter’. Since Tritter doesn’t support multi-login, TritBot uses Trillian to log each message request with the details of the sender in order to discourage abuse.",
+      "url": "https://github.com/mhutchinson/tritter"
+    }
+  ]
+}
